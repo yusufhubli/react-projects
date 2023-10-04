@@ -7,35 +7,35 @@ const Review = () => {
         id:1,
         name:'Deren Bravo',
         job:'web developer',
-        image:'logo192.png',
+        image:'profile/p1.jpg',
         text:"temporibus doloremque ipsum iste accusamus. Inventore dolores consequatur accusamus atque quibusdam magnam nostrum ipsum optio? Numquam labore vero natus asperiores!"
     },
     {
         id:2,
         name:'Steve Smith',
         job:'application developer',
-        image:'logo192.png',
+        image:'profile/p2.jpg',
         text:" labore vero natus asperiores! temporibus doloremque ipsum iste accusamus. Inventore dolores consequatur accusamus atque quibusdam magnam nostrum ipsum optio? Numquam"
     },
     {
         id:3,
         name:'Eoin Morgan',
         job:'Software Engineer',
-        image:'logo192.png',
+        image:'profile/p3.jpg',
         text:"temporibus doloremque ipsum iste accusamus.  vero natus asperiores! Inventore dolores consequatur accusamus atque quibusdam magnam nostrum ipsum optio? Numquam labore"
     },
     {
         id:4,
         name:'David Warner',
         job:'web designer',
-        image:'logo192.png',
+        image:'profile/p4.jpg',
         text:"consequatur accusamus atque quibusdam magnam nostrum temporibus doloremque ipsum iste accusamus. Inventore dolores ipsum optio? Numquam labore vero natus asperiores!"
     },
     {
         id:5,
         name:'Mitchell Starc',
         job:'backend developer',
-        image:'logo192.png',
+        image:'profile/p5.jpg',
         text:"temporibus doloremque  dolores consequatur accusamus atqueipsum iste accusamus. Inventore quibusdam magnam nostrum ipsum optio? Numquam labore vero natus asperiores!"
     },
   ]
@@ -75,9 +75,9 @@ const Review = () => {
     })
   }
   return (
-    <article className=' w-[400px] bg-white text-center pb-5 shadow-md shadow-gray-400'>
-        <div className=' w-full h-28 mx-40 pt-5'>
-            <img src={image} className='absolute bg-slate-300 w-20 rounded-full' alt="" />
+    <article className=' w-[400px] md:w-[560px] bg-white text-center pb-5 border border-blue-400 rounded-md'>
+        <div className=' w-full h-28 mx-40 md:mx-60 pt-5'>
+            <img src={image} className='absolute bg-slate-300 w-20 h-20 rounded-full' alt="" />
             <span className='relative text-white bg-blue-400 rounded-full'>
                 <FaQuoteRight className=' bg-blue-400 rounded-full p-[5px] text-2xl'/>
             </span>

@@ -2,15 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import { DataProvider } from './cocktail/context';
 import { AppProvider } from './cart/context';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <DataProvider>
     <AppProvider>
       <App />
     </AppProvider>
+    </DataProvider>
   </React.StrictMode>
 );
 

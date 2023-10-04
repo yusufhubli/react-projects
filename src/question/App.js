@@ -33,9 +33,10 @@ function App() {
   ]
   const [question,setQuestion] = useState(data)
   return (
-    <div className="App ">
-      <h3>Question and Answers</h3>
-      <section className=' flex flex-wrap justify-center'>
+    <div className="flex justify-center ">
+     
+      <section className=' mx-auto'>
+      <h3 className=' text-2xl font-bold my-4 text-center'>Question and Answers</h3>
         {question.map(qus=>{
           return <SingleQuestion key={qus.id} {...qus}/>
         })}

@@ -37,6 +37,13 @@ export const phone = [
       img:'phone/sp5.jpeg',
       amount:1
     },
+    {
+      id:6,
+      title:'vivo A17 pro ',
+      price:179.99,
+      img:'phone/sp5.jpeg',
+      amount:1
+    },
   ]
 const AppContext = React.createContext()
 

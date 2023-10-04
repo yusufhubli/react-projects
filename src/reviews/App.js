@@ -4,11 +4,11 @@ import Review from './Review';
 
 function App() {
     return(
-      <main className=' flex justify-center'>
+      <main className=' flex justify-center mt-16'>
         <section>
           <div className=' text-center my-3 text-2xl'>
-            <h2>Our reiviews</h2>
-            <div className=' h-[2px] my-2 bg-black'></div>
+            <h2 className=' font-bold'>Our Reviews</h2>
+          
           </div>
           <Review/>
         </section>

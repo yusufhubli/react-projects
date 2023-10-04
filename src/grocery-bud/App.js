@@ -72,7 +72,7 @@ const App = () => {
     <section className=' w-[70%] bg-white border border-blue-500 h-auto p-5 m-5'>
       <form onSubmit={handleSubmit}>
         {alert.show && <Alert {...alert} removeAlert={showAlert} list={list} />}
-        <h3 className=' text-center font-bold text-xl my-3'>Grocery Bud</h3>
+        <h3 className=' text-center font-bold text-xl my-3'>Todo List</h3>
         <div>
           <input type="text" className='lg:w-[87%] outline-none py-1 px-2 border border-blue-600 m-2' 
           value={name} onChange={e => setName(e.target.value)} placeholder='eg:sam' />

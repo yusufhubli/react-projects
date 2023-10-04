@@ -7,39 +7,38 @@ function App() {
       id:1,
       name:'Tom Holland',
       age:20,
-      image:'logo192.png'
+      image:'profile/p1.jpg'
     },
     {
       id:2,
       name:'Will Smith',
       age:27,
-      image:'logo192.png'
+      image:'profile/p2.jpg'
     },
     {
       id:3,
       name:'Hester Hogan',
       age:23,
-      image:'logo192.png'
+      image:'profile/p3.jpg'
     },
     {
       id:4,
       name:'Bertie Yates',
       age:33,
-      image:'logo192.png'
+      image:'profile/p4.jpg'
     },
     {
       id:5,
       name:'Larry Little',
       age:22,
-      image:'logo192.png'
+      image:'profile/p5.jpg'
     },
   ]
   const [people,setPeople] = useState(data)
   return (
-    <div className=" text-center">
-      <h1>Reminder Project</h1>
+    <div className=" text-center h-[562px]  bg-lime-300">
       <section>
-        <h3>{people.length} birthdays Today</h3>
+        <h3 className=' font-bold uppercase py-4'>{people.length} birthdays Today</h3>
         <div className=' flex justify-center'>
         <List people={people}/>
         </div>

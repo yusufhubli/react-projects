@@ -27,19 +27,22 @@ const App = () => {
         setText(data.slice(0,amount))
       }
   return (
-    <section className=' bg-blue-200 m-6 rounded-md'>
+    <div className=' w-full flex justify-center'>
+        <section className=' w-full md:w-[900px] bg-purple-200 m-6 rounded-md'>
         <h3 className=' text-center my-2 font-bold text-2xl'>Text Generator</h3>
-        <form className=' my-4 text-center' onSubmit={handleSubmit}>
-            <label htmlFor="amount" className=' font-medium'> Paragraghs:</label>
-            <input className=' outline-none w-20 mx-2 p-1 rounded-md' type="number" name="amount" id="amount" value={count} onChange={e=>setCount(e.target.value)} />
-            <button className=' px-5 py-1 font-bold bg-blue-700 text-white rounded-md mx-2 hover:bg-blue-500' type="submit">Generate</button>
+        <form className=' my-4 pb-5 text-center' onSubmit={handleSubmit}>
+            <label htmlFor="amount" className=' font-bold'> Paragraghs:</label>
+            <input className=' outline-none w-[47%] mx-2 p-1 rounded-md' type="number" name="amount" id="amount" value={count} onChange={e=>setCount(e.target.value)} />
+            <button className=' px-5 py-1 font-bold bg-purple-700 text-white rounded-md mx-2 hover:bg-purple-600' type="submit">Generate</button>
         </form>
         <div>
             {text.map((item,index)=>{
-                return <p className=' text-sm italic font-medium m-3 p-5 bg-white' key={index}>{item}</p>
+                return <p className=' text-lg italic font-medium m-3 p-5 bg-white' key={index}>{item}</p>
             })}
         </div>
     </section>
+    </div>
+    
   )
 }
 

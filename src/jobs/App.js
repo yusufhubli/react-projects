@@ -10,7 +10,7 @@ function App() {
       company:'amazon',
       duties:['react is a library used for front end development it is a single page appliction react is a library used for front end development',
             ' adipisicing elit. Et ut maiores ea sint obcaecati hhhhh Lorem ipsum dolor sit amet, consectetur nostrum ipsum inventore harum aut nam.',
-            'veritatis praesentium eos ducimus odit veniam eaque, quos voluptate maiores reprehenderit distinctio temporibus iure debitis accusamus ipsum natus dolor! Ad, alias blanditiis. Necessitatibus, quaerat?'
+            'reprehenderit distinctio temporibus iure debitis accusamus ipsum natus dolor! Ad, alias blanditiis. Necessitatibus, quaerat?'
         ]
     },
     {
@@ -20,8 +20,8 @@ function App() {
       date:'Jun 2017 - now',
       company:'meta',
       duties:['react is a library used for front end development it is a single page appliction react is a library used for front end development',
-            'hhhhh Lorem ipsum dolor sit amet, consectetur adipisicing hhhhh Lorem ipsum dolor sit amet, consectem ipsum inventore harum aut nam.',
-            'veritatis praesentium eos ducimus odit veniam hhhhh Lorem ipsum dolor sit amet, consectetur temporibus iure debitis accusamus ipsum natus dolor! Ad, alias blanditiis. Necessitatibus, quaerat?'
+            'Lorem ipsum dolor sit amet, consectetur adipisicing hhhhh Lorem ipsum dolor sit amet, consectem ipsum inventore harum aut nam.',
+            ' ipsum dolor sit amet, consectetur temporibus iure debitis accusamus ipsum natus dolor! Ad, alias blanditiis. Necessitatibus, quaerat?'
         ]
     },   
     {
@@ -31,8 +31,8 @@ function App() {
       date:'Aug 2021 - now',
       company:'google',
       duties:['react is a library used for front end development it is a single page appliction react is a library used for front end development',
-            'hhhhh Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ut maiores ea sint obcaecati nostrum ipsum inventore harum aut nam.',
-            'veritatis praesentium eos ducimus odit veniam eaque, quos voluptate maiores reprehenderit distinctio temporibus iure debitis accusamus ipsum natus dolor! Ad, alias blanditiis. Necessitatibus, quaerat?'
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ut maiores ea sint obcaecati nostrum ipsum inventore harum aut nam.',
+            ' voluptate maiores reprehenderit distinctio temporibus iure debitis accusamus ipsum natus dolor! Ad, alias blanditiis. Necessitatibus, quaerat?'
         ]
     },      
   ]
@@ -58,10 +58,10 @@ function App() {
  }
 const {title,duties,company,date} = jobs[value]
  return (
-    <main className=''>
-      <section className='ml-5'>
-        <div>
-          <h2 className=' font-bold text-xl text-center my-2'>experience</h2>
+    <main className=' flex justify-center items-center h-[570px]'>
+      <section className='ml-5 bg-white p-8'>
+        <div className=' my-5'>
+          <h2 className=' font-bold text-2xl text-center my-2'>Experience</h2>
           <div className=' h-[2px] bg-cyan-500 w-20 mx-auto'></div>
         </div>
         <div className='lg:flex'>
