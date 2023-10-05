@@ -69,14 +69,15 @@ const App = () => {
    localStorage.setItem('list',JSON.stringify(list))
   },[list])
   return (
-    <section className=' w-[70%] bg-white border border-blue-500 h-auto p-5 m-5'>
+    <div className=' w-full flex justify-center'>
+       <section className=' md:w-[800px] bg-white border border-blue-500 h-auto p-5 m-5'>
       <form onSubmit={handleSubmit}>
         {alert.show && <Alert {...alert} removeAlert={showAlert} list={list} />}
         <h3 className=' text-center font-bold text-xl my-3'>Todo List</h3>
         <div>
-          <input type="text" className='lg:w-[87%] outline-none py-1 px-2 border border-blue-600 m-2' 
+          <input type="text" className=' w-[68%] md:w-[80%] lg:w-[85%] outline-none py-1 px-2 border border-blue-600 m-2' 
           value={name} onChange={e => setName(e.target.value)} placeholder='eg:sam' />
-          <button className=' px-5 py-1 bg-blue-500 text-white hover:bg-blue-600 ' type='submit'>
+          <button className=' px-2 md:px-5 py-1 bg-blue-500 text-white hover:bg-blue-600 ' type='submit'>
             {editing ? 'Edit' : 'Submit'}
           </button>
         </div>
@@ -88,6 +89,8 @@ const App = () => {
         </div>
       )}
     </section>
+    </div>
+   
   )
 }
 

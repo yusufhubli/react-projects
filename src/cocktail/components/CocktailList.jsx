@@ -20,8 +20,8 @@ const CocktailList = () => {
   return (
     <div>
       <section>
-        <h1 className=' text-2xl font-medium text-center'>Cocktails</h1>
-        <div className=' w-full flex flex-wrap justify-center my-4'>
+        <h1 className=' text-xl md:text-2xl font-medium text-center'>Cocktails</h1>
+        <div className=' w-full flex flex-wrap justify-center my-2'>
           {
             cocktail.map((item)=>{
               return <Cocktail key={item.id} {...item}/>

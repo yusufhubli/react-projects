@@ -75,16 +75,16 @@ const Review = () => {
     })
   }
   return (
-    <article className=' w-[400px] md:w-[560px] bg-white text-center pb-5 border border-blue-400 rounded-md'>
-        <div className=' w-full h-28 mx-40 md:mx-60 pt-5'>
-            <img src={image} className='absolute bg-slate-300 w-20 h-20 rounded-full' alt="" />
+    <article className=' w-[320px] md:w-[560px] bg-white text-center pb-5 border border-blue-400 rounded-md mx-auto'>
+        <div className=' h-24 md:h-28 mx-32 md:mx-60 pt-5'>
+            <img src={image} className='absolute bg-slate-300 w-16 h-16 md:w-20 md:h-20 rounded-full' alt="" />
             <span className='relative text-white bg-blue-400 rounded-full'>
-                <FaQuoteRight className=' bg-blue-400 rounded-full p-[5px] text-2xl'/>
+                <FaQuoteRight className=' bg-blue-400 rounded-full p-[5px] text-xl'/>
             </span>
         </div>
         <h4 className=' font-sans text-sm font-bold'>{name}</h4>
         <p className=' uppercase text-sm text-blue-500'>{job}</p>
-        <p className=' text-sm px-6 py-2 italic'>{text}</p>
+        <p className=' text-sm px-4 md:px-6 py-2 italic'>{text}</p>
         <div className=''>
             <button onClick={prevPerson} className=' text-blue-500 mx-4 my-2'><FaChevronLeft/></button>
             <button  onClick={nextPerson} className=' text-blue-500 mx-4 my-2'><FaChevronRight/></button>

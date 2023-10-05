@@ -18,7 +18,7 @@ import { BrowserRouter,Route,Routes,Link } from 'react-router-dom'
 
 const MyApp = () =>{
   return(
-    <div className=' justify-center'>
+    <div className=''>
      <BrowserRouter>
      <nav className=' h-16 flex items-center bg-yellow-700 px-10'>
        <h1 className=' font-bold text-2xl text-white'><Link to={'/'}>Projects</Link></h1>

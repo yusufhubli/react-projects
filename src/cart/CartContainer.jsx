@@ -16,8 +16,8 @@ const CartContainer = () => {
   } 
   return (
    <section className=' py-5 w-full'>
-     <header className=' text-center font-bold text-2xl'>
-      <h2>your bag</h2>
+     <header className=' text-center font-bold text-xl md:text-2xl'>
+      <h2>Your Cart</h2>
      </header>
      <div className=' flex flex-wrap justify-center'>
       {cart.map(item=>{

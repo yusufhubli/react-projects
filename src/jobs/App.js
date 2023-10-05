@@ -58,27 +58,29 @@ function App() {
  }
 const {title,duties,company,date} = jobs[value]
  return (
-    <main className=' flex justify-center items-center h-[570px]'>
-      <section className='ml-5 bg-white p-8'>
+    <main className=' w-full flex justify-center items-center h-[570px]'>
+      <section className=' bg-white'>
         <div className=' my-5'>
-          <h2 className=' font-bold text-2xl text-center my-2'>Experience</h2>
+          <h2 className=' font-bold text-xl md:text-2xl text-center my-2'>Experience</h2>
           <div className=' h-[2px] bg-cyan-500 w-20 mx-auto'></div>
         </div>
         <div className='lg:flex'>
-          <div className=' my-2 lg:block lg:w-36 lg:mx-16 flex justify-center items-center '>
+          <div className=' my-2 text-sm lg:text-xl lg:block lg:w-36 lg:mx-16 flex justify-center items-center '>
             {jobs.map((item,index)=>{
               return <button key={item.id}
               className={`font-bold py-1 outline-none mx-4 uppercase lg:pl-7 ${index === value && 'text-cyan-500 border-b-2 lg:border-b-white lg:border-l-2 border-cyan-500'}`}
               onClick={()=>setValue(index)}>{item.company}</button>
             })}
           </div>
-          <article className=' w-[450px] lg:w-[600px]'>
-            <h3 className=' capitalize font-medium text-lg'>{title}</h3>
-            <h4 className=' py-1 bg-gray-300 w-20 text-center rounded-md my-1 uppercase text-sm font-medium'>{company}</h4>
-            <p className=' text-sm font-medium text-gray-500 my-1'>{date}</p>
+          <article className=' w-80 md:w-[550px] lg:w-[600px] p-5'>
+            <h3 className=' capitalize font-medium text-sm md:text-lg'>{title}</h3>
+            <h4 className=' py-1 bg-gray-300 w-20 text-center rounded-md my-1 uppercase text-xs md:text-sm font-medium'>{company}</h4>
+            <p className=' text-xs md:text-sm font-medium text-gray-500 my-1'>{date}</p>
             {duties.map((duty,index)=>{
               return <div key={index} className=' flex items-center my-3'>
-                <FaAngleDoubleRight className=' text-cyan-500 mr-3 text-2xl'/>
+                <div className=''>
+                <FaAngleDoubleRight className=' text-cyan-500 mr-3 text-lg'/>
+                </div>
                 <p className=' text-sm font-serif italic'>{duty}</p>
               </div>
             })}

@@ -80,13 +80,13 @@ function App() {
   if(tour.length === 0){
     return(
       <main>
-        <div>
-          <h2>No Tours left</h2>
-          <button onClick={()=>fetchTour()}>refresh</button>
+        <div className=' my-16 text-center'>
+          <h2 className=' font-medium text-xl text-center'>No Tours left</h2>
+          <button className=' px-10 py-1 rounded bg-emerald-400 font-bold my-3 capitalize' onClick={()=>fetchTour()}>refresh</button>
         </div>
       </main>
     )
-  }
+  } 
   return (
     <div className="App ">
       <Tours tours={tour} removeTour={removeTour}/>

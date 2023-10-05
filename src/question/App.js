@@ -36,7 +36,7 @@ function App() {
     <div className="flex justify-center ">
      
       <section className=' mx-auto'>
-      <h3 className=' text-2xl font-bold my-4 text-center'>Question and Answers</h3>
+      <h3 className=' text-xl md:text-2xl font-bold my-4 text-center'>Question and Answers</h3>
         {question.map(qus=>{
           return <SingleQuestion key={qus.id} {...qus}/>
         })}

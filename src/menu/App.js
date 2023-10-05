@@ -69,8 +69,8 @@ function App() {
     setMenuItem(newItem)
   }
   return (
-    <main className=' flex justify-center'>
-      <section>
+    <main className=' w-full flex justify-center'>
+      <section className=' w-full'>
         <div className=' text-center'>
           <h1 className=' font-bold my-5 text-2xl'>Our Menu</h1>
           
